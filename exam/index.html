@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>欢迎登入</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body onload="onload2()">
+		<div id="all">
+
+			<img class="bgp" src="img/bg.gif">
+			<!--面板-->
+			<div id="panel">
+
+				<!--面板的头部-->
+				<div class="panel-top">
+					<h2>欢迎登录<br/>《多媒体》考试系统</h2>
+				</div>
+				<!--面板的主要内容-->
+				<div class="panel-content">
+					<form action="check.php" method="post">
+					<div class="int">
+						<label><img class="small" src="img/user.png" ></label>
+						<input type="text" id="text" name="text" placeholder="你的手机号/用户名">
+					</div>
+					<div class="int">
+						<label><img class="small" src="img/password.png" ></label>
+						<input type="password" id="password" name="password" placeholder="输入密码">
+					</div>
+					<div class="dc" ><b>身份</b>
+					<input type="radio" class="radio1" name="identity" value="student" />学生
+					<input type="radio" class="radio2" name="identity" value="teacher" />老师				
+				</div>
+					<!--配置信息-->
+					<div class="setting">
+						<a href="#" class="auto-login">
+							<input type="checkbox" id="ischeckbox" onclick="ischeck()">下次自动登录
+						</a>
+						<a href="#" class="forget-pwd">忘记密码</a>
+					</div>
+					<div class="login">
+						<input id="sub" type="submit" value="登录" />
+					</div>
+					</form>
+					<div class="reg">还没账号?
+						<a href="register.html">马上注册</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+<script type="text/javascript" src="js/jquery-1.5.1.js" ></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+
+</html>

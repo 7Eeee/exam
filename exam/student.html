@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/student.css" />
+		<title>student</title>
+	</head>
+	<body onload="onload()">
+		<img class="bgp" src="img/sky.jpg">
+		<div id="head">
+			<button class="p1" id="back">返回</button>
+		    <button class="p1" id="index">首页</button>
+			<button class="p1" id="logout">退出登陆</button>
+
+
+		</div>
+		<div id="whichteacher">
+			请填写老师ID：
+			<form action="teacher.php" method="post" id="form1" >	
+				<input type="text" id="session" name="session" />
+			<input type="text" id="teacher" name="teacher" />
+			<input type="submit" value="aaa" id="submit2"/>
+			</form>
+		</div>
+		<button id="test" >进入测试</button>
+		<button id="exam" >我的成绩</button>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.5.1.js" ></script>
+	<script type="text/javascript" src="js/teacher.js" ></script>
+	<script type="text/javascript" src="js/head.js" ></script>
+</html>

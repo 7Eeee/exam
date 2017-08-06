@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>用户注册表单页</title>
+		<link rel="stylesheet" href="css/register.css" />
+	</head>
+
+	<body>
+		<!--input 标签新特性-->
+		<img class="bgp" src="img/reg.jpg">
+		<div id="form_content">
+			<form action="add.php" method="post">
+				<div class="dc">
+					<h3>用户注册页面</h3></div>
+				<div class="dc"><b>用户昵称</b><input id="user" name="user" type="text" placeholder="6-10数字或字母组成" autofocus required pattern="^[0-9a-zA-Z]{6,10}$" />
+					<p class="pc">请输入学号</p>
+				</div>
+				<div class="dc"><b>用户密码</b><input id="pwd" name="pwd" type="password" placeholder="8-12位数字/字母/英文符号组成" required pattern="^\w{8,12}$" />
+					<p class="pc">请输入密码</p>
+				</div>
+				<div class="dc"><b>真实姓名</b><input id="name" name="name" type="text" placeholder="真实姓名" required/>
+					<p class="pc">请输入姓名</p>
+				</div>
+				<div class="dc"><b>个人邮箱</b><input id="email" name="email" type="email" required/>
+					<p class="pc">请输入邮箱</p>
+				</div>
+
+				<div class="dc"><b>联系电话</b><input id="tel" name="tel" type="tel" required/>
+					<p class="pc">请输入联系电话</p>
+				</div>
+				<div class="dc"><b>你的年龄</b><input id="age" name="age" type="number" min="10" max="60" placeholder="年龄范围10-60" required/>
+					<p class="pc">请输入你的年龄</p>
+				</div>
+				<div class="dc"><b>出生日期</b><input id="date" name="date" type="date" required/>
+					<p class="pc">请选择出生日期</p>
+				</div>
+				<div class="dc" ><b>身份</b>
+					
+					<input type="radio" class="radio1" name="identity" value="student" onclick="check(this.value)"/><label class="word1">学生</label>
+					<input type="radio" class="radio2" name="identity" value="teacher" onclick="check(this.value)"/><label class="word2" >老师</label>
+					
+					<p class="pc">请选择身份</p>
+				</div>
+				<div class="dc" id="teaID"><b>老师工号</b><input id="teacherID" name="teacherID" type="text" placeholder="教师必填"/>
+				<p class="pc">请填写ID</p>
+				</div>
+				<div class="dc"><input id="sub" type="submit" value="提交注册" /></div>
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.5.1.js" ></script>
+	<script type="text/javascript" src="js/register.js" ></script>
+
+
+</html>

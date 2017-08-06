@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/addtest.css" />
+	</head>
+	<body onload="onload3()">
+		<form action="AddTest.php" method="post">
+			<div id="addt">
+				<div ><p id="aa1"></p></div>(如需修改试卷名称，请返回选择题第1题修改）
+				<div class="dc" id="h2">试卷名称：<input type="text" id="TestName" name="TestName"/></div>
+				<div class="dc" id="h7">限时几分钟：<input type="text" id="unit" name="unit" /></div>
+				<div class="dc">题目正文：<input type="text" id="TestContent" name="TestContent" required/></div>			
+				<div class="dc" id="h6"><span id="how">选项A：</span><input type="text" id="AnswerA" name="AnswerA" />(正确答案)</div>
+				<div class="dc" id="h3">选项B：<input type="text" id="AnswerB" name="AnswerB" /></div>
+				<div class="dc" id="h4">选项C：<input type="text" id="AnswerC" name="AnswerC" /></div>
+				<div class="dc" id="h5">选项D：<input type="text" id="AnswerD" name="AnswerD" /></div>
+				
+				<div class="dc">分数值：<input type="text" id="score" name="score" required/></div>
+				<div class="dc"><input id="sub" type="submit" value="提交注册" /></div>
+			</div>
+		</form>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.5.1.js" ></script>
+<script type="text/javascript" src="js/nav.js" ></script>
+<script type="text/javascript" src="js/addtest.js" ></script>
+</html>
