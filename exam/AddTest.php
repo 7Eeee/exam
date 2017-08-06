@@ -18,7 +18,7 @@ $type=$_COOKIE["type"];
 $testid=$_COOKIE["testid"];
 $type2=intval($type.substr(1,1));
 
-//echo "111111111111";
+
        if($type=='a1'){
        	$TestName=$_POST['TestName'];
 $unit=$_POST['unit'];
