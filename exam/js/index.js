@@ -42,15 +42,14 @@ function ischeck() {
 		var txtPwd = $("#password").val();
 		//alert(txtUser);
 		if(txtUser != null && txtUser != "" && txtPwd != null && txtPwd != "") {
-//			alert('jjj');
+			//			alert('jjj');
 			setCookie('username', txtUser, 1);
 			setCookie('pwd', txtPwd, 1);
-		} 
-	}
-	else {
-			setCookie('flag1', '000', 1);
 		}
-	
+	} else {
+		setCookie('flag1', '000', 1);
+	}
+
 }
 
 function onload2() {
@@ -61,12 +60,10 @@ function onload2() {
 		if(username != null && username != "" && txtPwd != null && txtPwd != "") {
 			document.getElementById('text').value = username;
 			document.getElementById('password').value = txtPwd;
-			document.getElementById("ischeckbox").checked=true;
+			document.getElementById("ischeckbox").checked = true;
 		}
 	} else {
 		document.getElementById('text').value = null;
-		document.getElementById('password').value =null;
+		document.getElementById('password').value = null;
 	}
 }
-
-

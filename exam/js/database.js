@@ -14,8 +14,7 @@ function initDatabase() {
 		});
 	}, function(trans, result) {}, function(trans, message) {});
 	//执行创建表的Sql脚本
-		
-	
+
 }
 
 $(function() { //页面加载完成后绑定页面按钮的点击事件
@@ -30,21 +29,20 @@ $(function() { //页面加载完成后绑定页面按钮的点击事件
 			var txtTel = $("#tel").val();
 			var txtAge = $("#age").val();
 			var txtDate = $("#date").val();
-			var txtTeaID=$("#teacherID").val();
+			var txtTeaID = $("#teacherID").val();
 			var db = getCurrentDb();
 			//执行sql脚本，插入数据
 			db.transaction(function(trans) {
-				if(txtTeaID!=null){
-					trans.executeSql("insert into teacher(user,pwd,email,tel,age,date,teacherID) values(?,?,?,?,?,?,?) ", [txtUser, txtPwd, txtEmail, txtTel, txtAge, txtDate,txtTeaID], function(ts, data) {}, function(ts, message) {
-					alert(message);
-				});
-				
-				}
-				else{
-				trans.executeSql("insert into Demo2(user,pwd,email,tel,age,date) values(?,?,?,?,?,?) ", [txtUser, txtPwd, txtEmail, txtTel, txtAge, txtDate], function(ts, data) {}, function(ts, message) {
-					alert(message);
-				});
-				
+				if(txtTeaID != null) {
+					trans.executeSql("insert into teacher(user,pwd,email,tel,age,date,teacherID) values(?,?,?,?,?,?,?) ", [txtUser, txtPwd, txtEmail, txtTel, txtAge, txtDate, txtTeaID], function(ts, data) {}, function(ts, message) {
+						alert(message);
+					});
+
+				} else {
+					trans.executeSql("insert into Demo2(user,pwd,email,tel,age,date) values(?,?,?,?,?,?) ", [txtUser, txtPwd, txtEmail, txtTel, txtAge, txtDate], function(ts, data) {}, function(ts, message) {
+						alert(message);
+					});
+
 				}
 			});
 			//			showAllTheData();
@@ -52,10 +50,11 @@ $(function() { //页面加载完成后绑定页面按钮的点击事件
 		});
 	});
 });
+
 function getCurrentDb() {
 	//打开数据库，或者直接连接数据库参数：数据库名称，版本，概述，大小
 	//如果数据库不存在那么创建之
-	var db = openDatabase("myDb2", "1.0", "it's to save demo data!", 1024* 1024);
+	var db = openDatabase("myDb2", "1.0", "it's to save demo data!", 1024 * 1024);
 	return db;
 }
 
