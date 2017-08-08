@@ -25,11 +25,7 @@ $sel1 = $mysqli->query("SELECT user,pwd FROM student WHERE user = '$username'  A
 
 
               if ($row = $sel1->fetch_assoc()) {
-//            	 $_SESSION['user']=$username; //创建SESSION	
-           // sessionStorage.setItem("username", $username); 
-            //var value = sessionStorage.getItem("key");
-            //sessionStorage.removeItem("key");
-              	//echo $row['pwd'];
+
               	echo "<script language='javascript'>";
                 echo "sessionStorage.setItem('username', $username); ";
                 if($checkbro=='teacher'){
