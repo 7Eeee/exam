@@ -86,7 +86,7 @@ else {
 //              	 $arr=mysqli_fetch_assoc($r);
 //              	 echo $arr;
 //              	$response='good';
-//echo $response;
+//echo $respons
 //setcookie("left",$type,1);
 echo "<script language='javascript'>";
 //echo "sessionStorage.setItem('left', '$type');";
