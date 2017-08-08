@@ -1,94 +1,106 @@
-#form_content{
-   width:600px;
-   margin:0 auto;
-   position:absolute;
-   left:400px;
-   top: 90px;
-  }
-  #form_content .dc{
-   width:600px;
-   margin-top:10px;
-   overflow:hidden;
-  }
-  #form_content .dc h3{
-   /*text-align:center;*/
-   position:relative;
-   left:150px;
-   top: 0;
-  }
-  #form_content b{
-   display:inline-block;
-   height:40px;
-   line-height: 40px;
-   margin-left:20px;
-  }
-  #form_content input{
-   display:inline-block;
-   height:34px;
-   width:200px;
-   border-radius:2px;
-   margin-left:60px;
-   padding-left:10px;
-  }
-  .pc{
-   width:200px;
-   height:40px;
-   float:right;
-   line-height:40px;
-   text-align:center;
-   margin:0 20px 0;
-   background:#333;
-   color:#fff;
-   font-weight:bold;
-   border-radius:8px;
-   display:none;
-  }
-  input#sub{
-   display:inline-block;
-   width:215px;
-   background:mediumslateblue;
-   margin-left:144px;
-  }
-  .show_pass{
-   background:limegreen;
-   display:block;
-  }
-  .show_warn{
-   background:#e4393c;
-   display:block;
-  }
-  #audio_bground{
-   width:100%;
-   height:100%;
-   background:#afa;
-   position:absolute;
-   z-index:-10;
-  }
-.bgp{
+#form_content {
+	width: 600px;
+	margin: 0 auto;
+	position: absolute;
+	left: 400px;
+	top: 90px;
+}
+
+#form_content .dc {
+	width: 600px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#form_content .dc h3 {
+	/*text-align:center;*/
+	position: relative;
+	left: 150px;
+	top: 0;
+}
+
+#form_content b {
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+#form_content input {
+	display: inline-block;
+	height: 34px;
+	width: 200px;
+	border-radius: 2px;
+	margin-left: 60px;
+	padding-left: 10px;
+}
+
+.pc {
+	width: 200px;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 20px 0;
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 8px;
+	display: none;
+}
+
+input#sub {
+	display: inline-block;
+	width: 215px;
+	background: mediumslateblue;
+	margin-left: 144px;
+}
+
+.show_pass {
+	background: limegreen;
+	display: block;
+}
+
+.show_warn {
+	background: #e4393c;
+	display: block;
+}
+
+#audio_bground {
+	width: 100%;
+	height: 100%;
+	background: #afa;
+	position: absolute;
+	z-index: -10;
+}
+
+.bgp {
 	width: 100%;
 	height: 50%;
 }
 
-.radio1{
+.radio1 {
 	position: absolute;
 	left: 0px;
-	
 }
-.radio2{
+
+.radio2 {
 	position: absolute;
 	left: 120px;
-	
 }
-.word1{
+
+.word1 {
 	position: absolute;
 	left: 180px;
 	top: 450px;
 }
-.word2{
+
+.word2 {
 	position: absolute;
 	left: 300px;
 	top: 450px;
 }
-#teaID{
+
+#teaID {
 	display: none;
 }

@@ -1,9 +1,7 @@
-a{
-	position:relative
-	padding: 10px;
+a {
+	position: relative padding: 10px;
 	/*margin: 80px;*/
-	/*margin-top:10px;*/         
-margin-left:20px;
-border: 1px solid gray;
-	
+	/*margin-top:10px;*/
+	margin-left: 20px;
+	border: 1px solid gray;
 }

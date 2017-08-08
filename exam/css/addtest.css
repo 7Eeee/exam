@@ -1,31 +1,37 @@
-*{
+* {
 	padding: 5px;
 	margin: 0;
 }
-body{
-	 background: navajowhite;
+
+body {
+	background: navajowhite;
 }
-#addt{
-   width:800px;
-   margin:0 auto;
-   position:absolute;
-   left:150px;
-   top: 90px;
-  
-  }
-  #addt .dc{
-   width:800px;
-   margin-top:2px;
-   overflow:hidden;
-  }
-  #h1,#h2,#h7{
-  	/*display: hidden;*/
-  }
- /*#h5,#h6,#h3,#h4{
+
+#addt {
+	width: 800px;
+	margin: 0 auto;
+	position: absolute;
+	left: 150px;
+	top: 90px;
+}
+
+#addt .dc {
+	width: 800px;
+	margin-top: 2px;
+	overflow: hidden;
+}
+
+#h1,
+#h2,
+#h7 {
+	/*display: hidden;*/
+}
+
+
+/*#h5,#h6,#h3,#h4{
   	display: block;
   }*/
- #addt input{
- 	width: 500px;
- }
 
-
+#addt input {
+	width: 500px;
+}

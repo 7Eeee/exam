@@ -1,74 +1,87 @@
-*{    
-padding: 0;   
- margin: 0;
+* {
+	padding: 0;
+	margin: 0;
 }
-.bgp{
+
+.bgp {
 	position: absolute;
 	z-index: -1;
 }
-#whichteacher{ 
+
+#whichteacher {
 	position: absolute;
-	top: 60px;  
+	top: 60px;
 	left: 35%;
- font-size: 45px;  
- color: whitesmoke;  
-font-family: Arial;    
-font-weight: normal;    
-padding: 10px 0;    
-border-bottom: 1px solid #dddddd;    
-width: 350px;    
-margin: 0 auto;
+	font-size: 45px;
+	color: whitesmoke;
+	font-family: Arial;
+	font-weight: normal;
+	padding: 10px 0;
+	border-bottom: 1px solid #dddddd;
+	width: 350px;
+	margin: 0 auto;
 }
-#teacher{
+
+#teacher {
 	height: 50px;
 	width: 350px;
 }
-#test, #exam{
+
+#test,
+#exam {
 	position: absolute;
 	height: 200px;
 	width: 300px;
 	top: 300px;
-	font-size: 53px;  
- color: cadetblue;  
-font-family: arial;    
-font-weight: normal;  
-border-radius: 50px;
-background: slategrey;
-box-shadow: 3px 3px 3px;
+	font-size: 53px;
+	color: cadetblue;
+	font-family: arial;
+	font-weight: normal;
+	border-radius: 50px;
+	background: slategrey;
+	box-shadow: 3px 3px 3px;
 }
-#test{
+
+#test {
 	left: 180px;
 }
-#exam{
+
+#exam {
 	left: 720px;
 }
-#submit2,#session{
+
+#submit2,
+#session {
 	display: none;
 }
-#head{
+
+#head {
 	height: 35px;
 	width: 100%;
 	background: slategrey;
 }
-.p1{
+
+.p1 {
 	font-size: 20px;
-	width:100px;
+	width: 100px;
 	height: 35px;
 	border-radius: 10px;
-	
 }
-#back{
+
+#back {
 	position: absolute;
 	display: none;
 	background: cadetblue;
 }
-#index{
+
+#index {
 	position: absolute;
 	left: 84%;
 	display: none;
 	background: cadetblue;
 }
-#logout{
+
+#logout {
 	position: absolute;
 	left: 92%;
 	background: cadetblue;
