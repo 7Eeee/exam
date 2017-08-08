@@ -6,6 +6,7 @@ die('Error : (' . $mysqli->connect_error . ') ' . $mysqli->connect_error);
 }
 else {
     //echo "Connect success<br>";
+    	
 }
 
 ?>
