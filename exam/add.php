@@ -2,7 +2,6 @@
 
 <?php
 include("connect.php");
-
 $suser = $_POST['user'];
 $spwd = $_POST['pwd'];
 $sname = $_POST['name'];
